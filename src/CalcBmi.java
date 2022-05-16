@@ -94,6 +94,7 @@ public class CalcBmi  extends JFrame implements ActionListener {
         firstContentPanel.add(manRadioButton);
         firstContentPanel.add(womanRadioButton);
         //--------------------------------------------------------------------------------->
+        secondContentPanel = new JPanel();
         bodyForm = new JLabel("Body Form:");
 
 
