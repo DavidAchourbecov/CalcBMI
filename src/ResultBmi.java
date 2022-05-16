@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class resultBmi extends  JFrame implements  ActionListener {
+public class ResultBmi extends  JFrame implements  ActionListener {
 
     private JPanel contentPane;
     private JButton buttonCancel;
@@ -9,6 +9,11 @@ public class resultBmi extends  JFrame implements  ActionListener {
     private JLabel resultBmi;
     private JLabel currentWeight;
     private JLabel idealWeight;
+
+   public ResultBmi(String name ,String weightStatus, int weight, double idealWeight){
+
+   }
+
     @Override
     public void actionPerformed(ActionEvent e) {
 

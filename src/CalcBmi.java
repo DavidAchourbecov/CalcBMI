@@ -1,7 +1,11 @@
 import javax.swing.*;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 
 public class CalcBmi  extends JFrame implements ActionListener {
@@ -36,7 +40,7 @@ public class CalcBmi  extends JFrame implements ActionListener {
 
 
 
-    public CalcBmi(){
+    public CalcBmi() {
         JFrame frame = new JFrame("CalcBmi");
          frame.setLayout(new  BorderLayout(10,10));
         firstName = new JLabel("First Name:");
@@ -178,6 +182,8 @@ public class CalcBmi  extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+         if(e.getSource()==buttonSend){
+            this.onOK();
+        }
     }
 }
