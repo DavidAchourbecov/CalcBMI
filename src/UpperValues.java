@@ -18,6 +18,7 @@ public class UpperValues  extends  JFrame implements ActionListener {
     private JTextField textFieldAge;
     private JRadioButton manRadioButton;
     private JRadioButton womanRadioButton;
+    private  double slimness=0;
 
     public UpperValues() {
         firstName = new JLabel("First Name:");
