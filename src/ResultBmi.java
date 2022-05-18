@@ -2,6 +2,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+
+    // TODO: finsh the secound frame (moc).
+    // FIXME: Problem with all labels that contains (1) as described below:
+
 public class ResultBmi extends  JFrame implements  ActionListener {
 
     private JPanel contentPane;

@@ -34,9 +34,9 @@ public class CalcBmi  extends JFrame implements ActionListener {
         frame.setVisible(true);
         frame.setSize(Constants.WIDTH, Constants.HEIGHT);
         upperValues=new UpperValues();
-
-
-        frame.add(upperValues.getFirstContentPanel(),BorderLayout.NORTH);
+         middleValues=new MiddleValues();
+         frame.add(middleValues.getSecondContentPanel(),BorderLayout.WEST);
+         frame.add(upperValues.getFirstContentPanel(),BorderLayout.NORTH);
 
 
         buttonSend = new JButton("send");
