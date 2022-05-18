@@ -97,6 +97,29 @@ public class UpperValues  extends  JFrame implements ActionListener {
         this.firstContentPanel = firstContentPanel;
     }
 
+    public JTextField getTextFieldFirstName() {
+        return textFieldFirstName;
+    }
+
+    public void setTextFieldFirstName(JTextField textFieldFirstName) {
+        this.textFieldFirstName = textFieldFirstName;
+    }
+
+    public JTextField getTextFieldLastName() {
+        return textFieldLastName;
+    }
+
+    public void setTextFieldLastName(JTextField textFieldLastName) {
+        this.textFieldLastName = textFieldLastName;
+    }
+
+    public JTextField getTextFieldAge() {
+        return textFieldAge;
+    }
+
+    public void setTextFieldAge(JTextField textFieldAge) {
+        this.textFieldAge = textFieldAge;
+    }
 
     @Override
     public void actionPerformed(ActionEvent e) {

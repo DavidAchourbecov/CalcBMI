@@ -51,6 +51,15 @@ public class CalcBmi  extends JFrame implements ActionListener {
         frame.add(upperValues.getFirstContentPanel(),BorderLayout.NORTH);
 
 
+        buttonSend = new JButton("send");
+        buttonCancel = new JButton("Exit");
+        thirdContentPanel=new JPanel();
+        thirdContentPanel.add(buttonSend);
+        thirdContentPanel.add(buttonCancel);
+        frame.add(thirdContentPanel,BorderLayout.SOUTH);
+        frame.setVisible(true);
+
+
 
         //--------------------------------------------------------------------------------->
         secondContentPanel = new JPanel();
@@ -215,10 +224,10 @@ public class CalcBmi  extends JFrame implements ActionListener {
     }
 
     public int getWeight(){
-        return this.slider2.getValue();
+
+        return this.middleValues.getSlider1W().getValue();
 
     }
-
 
     private void onCancel() {
 
