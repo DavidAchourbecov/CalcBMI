@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.ChangeListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,8 +14,6 @@ public class CalcBmi  extends JFrame implements ActionListener {
     private JFrame frame;
     private JButton buttonSend;
     private JButton buttonCancel;
-
-
     private UpperValues upperValues;
     private  MiddleValues middleValues;
 
@@ -28,17 +24,14 @@ public class CalcBmi  extends JFrame implements ActionListener {
         frame.setLayout(new  BorderLayout(40,40));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setBackground(Color.GRAY);
-
-
-
+        //---------------------------------------------------------------------------------
         frame.setVisible(true);
         frame.setSize(Constants.WIDTH, Constants.HEIGHT);
         upperValues=new UpperValues();
          middleValues=new MiddleValues();
          frame.add(middleValues.getSecondContentPanel(),BorderLayout.WEST);
          frame.add(upperValues.getFirstContentPanel(),BorderLayout.NORTH);
-
-
+        //---------------------------------------------------------------------------------
         buttonSend = new JButton("send");
         buttonCancel = new JButton("Exit");
         thirdContentPanel=new JPanel();
@@ -46,16 +39,12 @@ public class CalcBmi  extends JFrame implements ActionListener {
         thirdContentPanel.add(buttonCancel);
         frame.add(thirdContentPanel,BorderLayout.SOUTH);
         frame.setVisible(true);
-
-
         buttonCancel.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 onCancel();
             }
         });
        this.addTextFieldsListeners();
-
-
     }
 
 

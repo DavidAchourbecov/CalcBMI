@@ -10,7 +10,6 @@ public class Constants {
     public static final double  LARGE=1.1;
     public static final double HUNDRED = 100;
     public static final double TEN = 10;
-
     public static final int WIDTH =600;
     public static final int HEIGHT = 480;
 }

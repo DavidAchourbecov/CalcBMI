@@ -78,7 +78,6 @@ public class MiddleValues extends JFrame implements ActionListener {
                 slimness=Constants.SMALL;
                 mediumRadioButton.setSelected(false);
                 largeRadioButton.setSelected(false);
-
             }
         });
         mediumRadioButton.addActionListener(new ActionListener() {
@@ -87,7 +86,6 @@ public class MiddleValues extends JFrame implements ActionListener {
                 slimness=Constants.MEDIUM;
                 smallRadioButton.setSelected(false);
                 largeRadioButton.setSelected(false);
-
             }
         });
         largeRadioButton.addActionListener(new ActionListener() {
